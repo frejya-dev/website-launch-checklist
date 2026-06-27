@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Launch Checklist</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">Website QA Tool</p>
+    <h1>Website Launch Checklist</h1>
+    <p class="intro">
+      A practical checklist for reviewing content, accessibility, analytics,
+      performance, and launch readiness before a website goes live.
+    </p>
+  </header>
 
+  <main>
+    <section class="progress-card" aria-labelledby="progress-heading">
+      <h2 id="progress-heading">Launch progress</h2>
+      <p><span id="completed-count">0</span> of <span id="total-count">0</span> items complete</p>
+      <div class="progress-bar" aria-hidden="true">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+    </section>
+
+    <section class="checklist-grid" aria-label="Website launch checklist">
+      <article class="checklist-section">
+        <h2>Content</h2>
+        <ul>
+          <li><label><input type="checkbox" /> Review all page copy for accuracy</label></li>
+          <li><label><input type="checkbox" /> Check spelling and grammar</label></li>
+          <li><label><input type="checkbox" /> Confirm links point to the correct pages</label></li>
+        </ul>
+      </article>
+
+      <article class="checklist-section">
+        <h2>Accessibility</h2>
+        <ul>
+          <li><label><input type="checkbox" /> Review image alt text</label></li>
+          <li><label><input type="checkbox" /> Check heading structure</label></li>
+          <li><label><input type="checkbox" /> Test keyboard navigation</label></li>
+        </ul>
+      </article>
+
+      <article class="checklist-section">
+        <h2>SEO</h2>
+        <ul>
+          <li><label><input type="checkbox" /> Review page titles</label></li>
+          <li><label><input type="checkbox" /> Review meta descriptions</label></li>
+          <li><label><input type="checkbox" /> Confirm sitemap and robots.txt</label></li>
+        </ul>
+      </article>
+
+      <article class="checklist-section">
+        <h2>Analytics</h2>
+        <ul>
+          <li><label><input type="checkbox" /> Confirm GA4 is installed</label></li>
+          <li><label><input type="checkbox" /> Test key events and conversions</label></li>
+          <li><label><input type="checkbox" /> Verify traffic source tracking</label></li>
+        </ul>
+      </article>
+
+      <article class="checklist-section">
+        <h2>Forms</h2>
+        <ul>
+          <li><label><input type="checkbox" /> Test contact forms</label></li>
+          <li><label><input type="checkbox" /> Test donation or payment forms</label></li>
+          <li><label><input type="checkbox" /> Confirm confirmation emails</label></li>
+        </ul>
+      </article>
+
+      <article class="checklist-section">
+        <h2>Performance</h2>
+        <ul>
+          <li><label><input type="checkbox" /> Optimize large images</label></li>
+          <li><label><input type="checkbox" /> Check page load speed</label></li>
+          <li><label><input type="checkbox" /> Review mobile experience</label></li>
+        </ul>
+      </article>
+
+      <article class="checklist-section">
+        <h2>Deployment</h2>
+        <ul>
+          <li><label><input type="checkbox" /> Confirm SSL certificate</label></li>
+          <li><label><input type="checkbox" /> Confirm DNS settings</label></li>
+          <li><label><input type="checkbox" /> Check redirects</label></li>
+        </ul>
+      </article>
+
+      <article class="checklist-section">
+        <h2>Post-launch</h2>
+        <ul>
+          <li><label><input type="checkbox" /> Review live site after launch</label></li>
+          <li><label><input type="checkbox" /> Monitor analytics data</label></li>
+          <li><label><input type="checkbox" /> Document follow-up fixes</label></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with HTML, CSS, and vanilla JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
